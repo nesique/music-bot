@@ -1,6 +1,6 @@
-import express from 'express';
+import express from "express";
 const app = express();
-import bot from './index.js';
+import bot from "./index.js";
 
 app.get('/', (req, res) => {
     res.send('Hello, world!');
