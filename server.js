@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const bot = require('./index.js');
+import bot from './index.js';
 
 app.get('/', (req, res) => {
     res.send('Hello, world!');
