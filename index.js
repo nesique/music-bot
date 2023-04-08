@@ -11,3 +11,11 @@ export const client = new Bot();
 
 /* Call our start function to load the bot instance */
 (async () => await client.start(process.env.TOKEN))();
+
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+});
+
+const listener = app.listen(process.env.PORT, () => {
+    console.log('Your app is listening on port ' + listener.address().port);
+});
