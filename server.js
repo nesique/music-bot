@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const bot = require('./src/index.js');
+const bot = require('./index.js');
 
 app.get('/', (req, res) => {
     res.send('Hello, world!');
