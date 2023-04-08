@@ -1,6 +1,9 @@
 import "dotenv/config";
 import Types from "./src/utils/Types.js";
 Types()
+/* Import express */
+import express from "express";
+const app = express();
 
 /* Import our client structure */
 import Bot from "./src/struct/Bot.js";
